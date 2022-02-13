@@ -1,0 +1,25 @@
+{
+  "name": "study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "bsymonica <bsymonica@neowiz.com>",
+  "license": "MIT",
+  "dependencies": {
+    "readline-sync": "1.4.10",
+    "xo": "0.48.0"
+  },
+  "xo": {
+    "space": true,
+    "prettier": true
+  },
+  "devDependencies": {
+    "gulp-jshint": "2.1.0",
+    "jshint": "2.13.4"
+  }
+}
