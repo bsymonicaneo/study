@@ -5,12 +5,13 @@
 
 import { question } from 'readline-sync';
 const number = question('숫자를 입력하세요');
+
 if (number < 10) {
   console.log('Too low');
 }
 
 if (number >= 10 && number <= 20) {
   console.log('Correct');
-} else if (number < 10 || (number >= 10 && number <= 20)) {
+} else {
   console.log('Too high');
 }
