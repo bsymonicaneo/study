@@ -2,3 +2,5 @@
 
 import { question } from 'readline-sync';
 console.log(Math.PI.toFixed(5));
+
+// 파이 3.141592653589793238
