@@ -12,6 +12,6 @@ if (number < 10) {
 
 if (number >= 10 && number <= 20) {
   console.log('Correct');
-} else {
-  console.log('Too high');
+  } else {
+   console.log('Too high');
 }

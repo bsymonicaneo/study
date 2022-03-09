@@ -4,14 +4,18 @@
 사용자에게 단어를 입력받아서 피그 라틴으로 변환하고 소문자로 출력하는 프로그램을 만들어라. */
 
 import { question } from 'readline-sync';
-const word = question('영어로 단어를 입력하세요');
+const ftext = question('영어로 단어를 입력하세요');
+const ftextLower = ftext.toLocaleLowerCase(); // 소문자로 변환 
+const ftextfirst = ftextLower.slice(0, 1); // 첫 글자
 
-const first = (word[0].lower());
-const length = (len(word));
-const rest = (word[1:length]);
-if (first != "a" && first != "e" && first != "i" && first != "o" && first != "u") {
-    console.log(newword = rest + first + "ay");
+if (
+    ftextfirst === 'a' ||
+    ftextfirst === 'i' ||
+    ftextfirst === 'o' ||
+    ftextfirst === 'e' ||
+    ftextfirst === 'u' ||
+) {
+    console.log(ftextLower + 'way'); // 첫 글자가 모음일 경우
 } else {
-    console.log(newword = word + "way");
-} 
-console.log(newword.lower());
+    console.log(ftextLower.slice(1) + ftextfirst + 'ay'); // 첫 글자가 모음이 아닌 결우
+}
