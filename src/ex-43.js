@@ -5,7 +5,7 @@
 업 또는 다운이 아닌 것을 선택하면 "I don't understand"를 출력하라 */
 
 import { question } from 'readline-sync';
-const updown = question('원하는 카운트 방향? up/down : ');
+const updown = question('원하는 카운트 방향 up/down : ');
 
 if (updown.toLowerCase() === 'up') {
     const userMax = question('가장 큰 숫자는? : ');

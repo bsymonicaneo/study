@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "readline-sync": "1.4.10",
+    "real-turtle": "1.0.21",
     "xo": "0.48.0"
   },
   "xo": {

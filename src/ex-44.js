@@ -7,8 +7,10 @@ import { question } from 'readline-sync';
 const user = question('파티에 몇 명 초대할래? : ');
 
 if (user < 10) {
-    const name = question('이름이 뭐야? : ');
-    for (let i = user; i < 0; i--) {
-        console.log(`${name} has been invited.` + i);
+    for (let i = 0; i < user; i++) {
+        const username = question('이름이 뭐야? : ');
+        console.log(`${username} has been invited`);
     }
+} else {
+    console.log('Too many people');
 }

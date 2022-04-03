@@ -11,7 +11,7 @@ let total = 0;
 
 for (let i = 0; i <= 4; i++) {
   const number = questionInt('숫자를 입력하세요 : ');
-  const answer = question('숫자를 더할건가요? (y/n) : ');
+  const answer = question('숫자를 total에 더 할건가요? (y/n) : ');
 
   if (answer === 'y') {
     total += number;
