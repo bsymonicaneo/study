@@ -4,19 +4,22 @@
 
 import { question } from 'readline-sync';
 
-const ranNumber = Math.floor(Math.random() * (10 - 1) + 1);
-console.log(ranNumber);
+let userCount = 0;
 
-while (true) {
-  console.log('1 ~ 10 숫자 입력하세요');
-  let select = question();
-  if (ranNumber === Number(select)) {
-    console.log('맞췄습니다.');
-    break;
+for (let i = 0; i <= 4; i ++) {
+  const ranNumber1 = Math.floor(Math.random() * (10 - 1) + 1);
+  const ranNumber2 = Math.floor(Math.random() * (10 - 1) + 1);
+  const ranResult = ranNumber1 + ranNumber2;
+  console.log(ranResult);
+  const userNum = question('답을 입력하세요 : ');
+
+  if (Number(ranResult) === Number(userNum)) {
+    userCount++;
+    console.log('맞혔습니다');
   } else {
-    console.log('못 맞췄습니다. ');
+    console.log('틀렸습니다');
+    console.log('정답은' + ranResult);
   }
 }
 
-// 퀴즈가 끝나면 몇 개를 맞혔는지 출력하라는거 어려움
-
+console.log('당신이 맞힌 개수는' + userCount);
