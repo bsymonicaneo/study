@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex. 63</title>
+  </head>
+  <body>
+    <!-- 그림이 그려질 영역 -->
+    <canvas id="real-turtle"></canvas>
+    <script src="https://unpkg.com/real-turtle"></script>
+    <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
+    <script>
+      // 서로 붙어있지 않는 세 개의 정사각형을 그려라. 세 개의 정사각형을 다른 색상으로 채워라.
+      // .penUp() 펜 올림, 그림 안 그려짐
+      // .penDown() 펜 내림, 그림 다시 그려짐
+      // .setFillStyle(), .beginPath(), .closePate(), .fill()
+     function drawSquareCanvas(color) {
+         turtle.setFillStyle(color).beginPath()
+         for (let i = 0; i <= 3; i++) {
+             if (i !== 0) {
+                 turtle.right(90);
+             }
+             turtle.forward(100);
+         }
+         turtle.closePath().fill();
+     }
+      drawSquareCanvas('red');
+      turtle.penUp().forward(100);
+      turtle.penDown();
+
+      drawSquareCanvas('blue');
+      turtle.penUp().forward(100);
+      turtle.penDown();
+
+      drawSquareCanvas('green');
+    </script>
+  </body>
+</html>
