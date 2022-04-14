@@ -1,11 +1,12 @@
-/* ë‹¤ì„¯ê°œì˜ êµ­ê°€ ì´ë¦„ì„ ë‹´ê³  ìžˆëŠ” íŠœí”Œì„ ë§Œë“¤ê³  íŠœí”Œ ì „ì²´ë¥¼ ì¶œë ¥í•˜ë¼
-í‘œì‹œëœ êµ­ê°€ ì´ë¦„ë“¤ ì¤‘ í•˜ë‚˜ë¥¼ ìž…ë ¥í•˜ë¼ê³  ì‚¬ìš©ìžì—ê²Œ ìš”ì²­í•˜ê³ ,
-ìž…ë ¥ëœ êµ­ê°€ ì´ë¦„ì˜ ì¸ë±ìŠ¤ ë²ˆí˜¸ (ì¦‰, ëª©ë¡ì—ì„œì˜ ìœ„ì¹˜)ë¥¼ ì¶œë ¥í•˜ë¼ */
+/* ¹è¿­°ú °´Ã¼
+´Ù¼¸°³ÀÇ ±¹°¡ ÀÌ¸§À» ´ã°í ÀÖ´Â Æ©ÇÃÀ» ¸¸µé°í Æ©ÇÃ ÀüÃ¼¸¦ Ãâ·ÂÇÏ¶ó
+Ç¥½ÃµÈ ±¹°¡ ÀÌ¸§µé Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¶ó°í »ç¿ëÀÚ¿¡°Ô ¿äÃ»ÇÏ°í,
+ÀÔ·ÂµÈ ±¹°¡ ÀÌ¸§ÀÇ ÀÎµ¦½º ¹øÈ£ (Áï, ¸ñ·Ï¿¡¼­ÀÇ À§Ä¡)¸¦ Ãâ·ÂÇÏ¶ó */
 
 import { question } from 'readline-sync';
 
 const contry = ['Korea', 'France', 'Spain', 'China', 'Japan'];
 console.log(contry);
 
-const ask = question('í‘œì‹œëœ êµ­ê°€ ì´ë¦„ ì¤‘ í•˜ë‚˜ë¥¼ ìž…ë ¥í•˜ì„¸ìš” : ');
+const ask = question('Ç¥½ÃµÈ ±¹°¡ ÀÌ¸§ Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ');
 console.log(ask + ' has index number ' + contry.indexOf(ask));
