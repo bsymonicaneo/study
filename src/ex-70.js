@@ -6,4 +6,4 @@ const str = ['Korea', 'France', 'Spain', 'China', 'Japan'];
 
 const ask = question('숫자를 입력하세요 : ');
 
-console.log(String.charAt(ask));
+console.log(str[ask]);

@@ -1,12 +1,8 @@
-/* ¹è¿­°ú °´Ã¼
-´Ù¼¸°³ÀÇ ±¹°¡ ÀÌ¸§À» ´ã°í ÀÖ´Â Æ©ÇÃÀ» ¸¸µé°í Æ©ÇÃ ÀüÃ¼¸¦ Ãâ·ÂÇÏ¶ó
-Ç¥½ÃµÈ ±¹°¡ ÀÌ¸§µé Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¶ó°í »ç¿ëÀÚ¿¡°Ô ¿äÃ»ÇÏ°í,
-ÀÔ·ÂµÈ ±¹°¡ ÀÌ¸§ÀÇ ÀÎµ¦½º ¹øÈ£ (Áï, ¸ñ·Ï¿¡¼­ÀÇ À§Ä¡)¸¦ Ãâ·ÂÇÏ¶ó */
 
 import { question } from 'readline-sync';
 
 const contry = ['Korea', 'France', 'Spain', 'China', 'Japan'];
 console.log(contry);
 
-const ask = question('Ç¥½ÃµÈ ±¹°¡ ÀÌ¸§ Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä : ');
+const ask = question('ë²ˆí˜¸ë¥¼ ê³ ë¥´ì‹œìš” : ');
 console.log(ask + ' has index number ' + contry.indexOf(ask));

@@ -12,19 +12,17 @@
     <script src="https://unpkg.com/real-turtle"></script>
     <script src="https://unpkg.com/real-turtle/build/helpers/simple.js"></script>
     <script>
-      // 여기서 시작
-        .right(60)
-        .forward(100)
-        .right(60)
-        .forward(100)
-        .right(60)
-        .forward(100)
-        .right(60)
-        .forward(100)
-        .right(60)
-        .forward(100)
-        .right(60)
-        .forward(100);
+      .setStrokeColorRGB(r, g, b)
+      const color = [ [0, 0, 250], [0,250, 0], [250, 0, 0], [0, 250, 250], [250, 250, 0], [250, 0, 250]];
+      for (let i = 0; i < 8; i++) {
+        const randomnum = Math.floor(Math.random() * 6); // 0 ~ 5 랜덤 숫자
+        console.log(randomnum);
+        console.log(color[randomnum]);
+
+        turtle.right(45);
+        turtle.setStrokeColorRGB(color[randomnum][0],color[randomnum][1],color[randomnum][2])
+              .forward(100);
+      }
     </script>
   </body>
 </html>
