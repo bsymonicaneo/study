@@ -6,19 +6,27 @@
 
 import { question } from 'readline-sync';
 
-const Food = [];
+const foods = [];
 
-const Food1 = question('좋아하는 음식을 입력 하세요 : ');
-Food.push(Food1);
-const Food2 = question('좋아하는 음식을 입력 하세요 : ');
-Food.push(Food2);
-const Food3 = question('좋아하는 음식을 입력 하세요 : ');
-Food.push(Food3);
-const Food4 = question('좋아하는 음식을 입력 하세요 : ');
-Food.push(Food4);
+for (let i = 1; i <= 4; i++) {
+  const userFood = question(
+    '좋아하는 음식 4가지를 입력하세요.' + i + '번째 : '
+  );
+  foods[i] = userFood;
+}
 
-Food.forEach((Food, index) => console.log(Food, index));
+for (const [key, value] of Object.entries(foods)) {
+  console.log(`${kay}: ${value}`);
+}
 
-const delfood = question('제거하고 싶은 항목을 입력 하세요 : ');
-Food.splice(delfood, 1);
-console.log(Food);
+const userDelete = question('삭제하고 싶은 음식을 입력하세요 : ');
+
+for (const [key, value] of Object.entries(foods)) {
+  if (value === userDelete) {
+    delete foods[key];
+  }
+}
+
+for (const [key, value] of Object.entries(foods)) {
+  console.log(`${key} : ${value}`);
+}

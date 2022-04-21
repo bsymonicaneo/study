@@ -10,4 +10,5 @@ console.log(sport1);
 const asksport = question('좋아하는 스포츠가 무엇인가요? : ');
 
 sport1.push(asksport);
+sport1.sort();
 console.log(sport1);

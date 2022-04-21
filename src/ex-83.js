@@ -7,13 +7,15 @@ const usermag = question('대문자로 메시지를 입력하세요 : ');
 
 let tryagain = true;
 
-while (tryagain === true) {
-  if (usermag.toLocaleUpperCase) {
+while (tryagain) {
+  const usermag = question('대문자로 메시지를 입력하세요 : ');
+  const checkmag = usermag.toUpperCase();
+
+  console.log(usermag);
+  console.log(checkmag);
+
+  if (usermag === checkmag) {
     console.log('Thank you');
     tryagain = false;
-  } else if (usermag.toLocaleLowerCase) {
-    const usermag = question('대문자로 메시지를 입력하세요 : ');
   }
 }
-
-// 소문자 안됨 
