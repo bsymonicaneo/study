@@ -16,7 +16,7 @@ for (let i = 1; i <= 4; i++) {
 }
 
 for (const [key, value] of Object.entries(foods)) {
-  console.log(`${kay}: ${value}`);
+  console.log(`${key}: ${value}`);
 }
 
 const userDelete = question('삭제하고 싶은 음식을 입력하세요 : ');
