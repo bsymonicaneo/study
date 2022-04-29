@@ -12,12 +12,12 @@ console.log('2) Triangle');
 const fnumber = question('Enter a number : ');
 
 if (fnumber == 1) {
-    const fnumber1 = question('한 면의 길이를 입력하세요');
-    console.log(fnumber1 * fnumber1);
+  const fnumber1 = question('한 면의 길이를 입력하세요');
+  console.log(fnumber1 * fnumber1);
 } else if (fnumber == 2) {
-    const fnumber2 = question('밑변을 입력하세요');
-    const fnumber3 = question('높이를 입력하세요');
-    console.log((fnumber2 * fnumber3) / 2);
+  const fnumber2 = question('밑변을 입력하세요');
+  const fnumber3 = question('높이를 입력하세요');
+  console.log((fnumber2 * fnumber3) / 2);
 } else {
-    console.log('1 혹은 2를 입력 하세요');
+  console.log('1 혹은 2를 입력 하세요');
 }

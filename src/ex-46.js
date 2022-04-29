@@ -8,6 +8,7 @@ import { question } from "readline-sync";
 let userNum = 0;
 
 while (userNum <= 5) {
-    userNum = question('숫자를 입력하세요 : ');
+  userNum = question('숫자를 입력하세요 : ');
 }
+
 console.log(`The last number you entered was a ${userNum}`);

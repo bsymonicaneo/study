@@ -6,7 +6,7 @@
 
 import { question } from 'readline-sync';
 
-let userNum = 0; //초기값 바깥에서 세팅
+let userNum = 0; // 초기값 바깥에서 세팅
 
 while (userNum <= 10 || userNum >= 20) {
   userNum = question('10과 20 사이의 숫자를 입력하세요 : ');

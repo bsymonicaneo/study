@@ -8,7 +8,7 @@ import { question } from 'readline-sync';
 
 const threeNum = ['100', '200', '300', '400'];
 
-threeNum.forEach((number, index) => console.log(number, index));
+threeNum.forEach((number, index) => console.log(number, index)); // 한줄씩 출력
 
 /* 한줄씩 출력하는 다른 방법  
 for (let number of threeNum) {

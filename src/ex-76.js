@@ -5,20 +5,44 @@
 
 import { question } from 'readline-sync';
 
-let que = 'y';
-let count = 0;
-const party = [];
+const partyPeople = [];
 
-while (que === 'y') {
-  const name = question('파티에 초대하고 싶은 사람 이름 입력 : ');
-  party.push(name);
-  console.log(party);
+for (let i = 0; i <= 2; i++) {
+  partyPeople.push(
+    question('파티에 초대할 사람을 3명 입력하세요 ' + (i + 1) + '번 : ')
+  );
+}
 
-  count++;
+console.log(partyPeople);
 
-  que = question('사람 더 초대함? y/n : ');
-
-  if (que !== 'y') {
-    console.log('you have ' + count + ' people coming to your party');
+let answer = 'y';
+while (answer !== 'n') {
+  answer = question('파티에 사람을 더 초대하시겠습니까? (y/n) : ');
+  if (answer === 'n') {
+    console.log(
+      '파티에 초대한 사람의 수는 ' + partyPeople.length + ' 명 입니다.'
+    );
+    console.log(partyPeople);
+  } else {
+    partyPeople.push(question('파티에 초대할 사람을 더 입력하세요 : '));
   }
 }
+
+/* 
+Const name1 = question('첫 번째 초대할 사람의 이름을 입력하세요 : ');
+const name2 = question('두 번째 초대할 사람의 이름을 입력하세요 : ');
+const name3 = question('세 번째 초대할 사람의 이름을 입력하세요 : ');
+const huma = [name1, name2, name3];
+let another = '';
+
+while (another.toUpperCase()) !== 'N') {
+  another = question('더 초대할래요?(y/n): ');
+  console.log(another);
+  if (another.toUpperCase() === 'N') {
+    console.log('파티에 초대된 사람은 ' + human.length);
+  } else {
+    const newname = question('초대할 사람의 이름을 입력하세요: ');
+    human.push(newname);
+  }
+}
+*/
