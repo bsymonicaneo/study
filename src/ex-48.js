@@ -10,12 +10,12 @@ let que = 'y';
 let count = 0;
 
 while (que === 'y') {
-    const name = question('파티에 초대하고 싶은 사람 이름 입력 : ');
-    console.log(name + ' has now been invited.');
-    count++;
-    que = question('사람 더 초대함? y/n : ');
+  const name = question('파티에 초대하고 싶은 사람 이름 입력 : ');
+  console.log(name + ' has now been invited.');
+  count++;
+  que = question('사람 더 초대함? y/n : ');
 
-    if (que !== 'y') {
-        console.log('you have ' + count + ' people coming to your party');
-    }
+  if (que !== 'y') {
+    console.log('you have ' + count + ' people coming to your party');
+  }
 }

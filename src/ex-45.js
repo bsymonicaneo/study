@@ -11,7 +11,7 @@ let total = 0;
 let usercnt = 0;
 
 while (total <= 50) {
-    usercnt = question('숫자를 입력하세요 : ');
-    total += Number(usercnt);
-    console.log(`The total is ${total}`);
+  usercnt = question('숫자를 입력하세요 : ');
+  total += Number(usercnt);
+  console.log(`The total is ${total}`);
 }
