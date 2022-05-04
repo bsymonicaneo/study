@@ -25,3 +25,25 @@ while (i <= 5) {
 
 console.log('Thank you');
 rightNumber.forEach((number) => console.log(number)); 
+
+
+/* 다른 방법
+let userNumber = 0;
+const arrayNumbers = [];
+
+while (arrayNumbers.length < 5) {
+  userNumber = question('숫자를 입력하세요: ');
+
+  if (Number(userNumber) >= 10 && Number(userNumber) <= 20 {
+    arrayNumbers.push(userNumber);
+  } else {
+    console.log('Out of range');
+  }
+}
+
+console.log('Thank you');
+
+for (const oneNumber of arrayNumbers) {
+  console.log(oneNumber);
+}
+*/ 

@@ -10,3 +10,9 @@ console.log(
     usereng.charAt(1).toUpperCase() +
     usereng.slice(2)
 );
+
+/* 다른 버전
+const first = usereng.charAt(0).toUpperCase();
+const second = usereng.charAt(1).toUpperCase();
+console.log(first + second + usereng.slice(2, usereng.length));
+*/
