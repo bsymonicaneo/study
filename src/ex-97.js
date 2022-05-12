@@ -10,8 +10,6 @@ const array04 = [
     ['3', '4', '2', '0'],
 ];
   
-console.log(array04);
-
 const row = question('행을 선택하세요 : ');
 const col = question('열을 선택하세요 : ');
 
