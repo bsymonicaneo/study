@@ -5,7 +5,7 @@
 
 import { question } from "readline-sync";
 
-const array04 = [
+const array2 = [
     [' ', '0', '1', '2'],
     ['0', '2', '5', '8'],
     ['1', '3', '7', '4'],
@@ -13,29 +13,23 @@ const array04 = [
     ['3', '4', '2', '0'],
 ];
 
+console.log(array2);
+
 const row = question('어떤 행을 출력할까요?(숫자) : ');
 const resultRow = Number(row) - 1; // 인덱스는 0부터 잡기 때문에 -1 해주는 것
-console.log(array04[resultRow]);
-
-const col = question('열을 선택하세요 : ');
+console.log(array2[resultRow]);
+const col = Number(question('열을 선택하세요 : '));
 const resultCol = Number(col) - 1;
-console.log(array04[resultCol]);
+console.log(array2[resultRow][resultCol]);
 
-/*
-const newcol = true;
-const array05 = [];
+const answer = question('이 값을 변경하고 싶은가요? (y/n)');
+if (answer === 'y') {
+  for (let i = 0; i <= 2; i++) {
+    const resultNumber = Number(question('변경하고 싶은 숫자를 입력하세요: '));
+    array2[resultRow][i] = resultNumber;
+  }
+} else {
+  console.log('End');
+}
 
-while (newcol) {
-    const useranwser = question('값을 변경하고 싶어요?(y/n): ');
-    if (useranwser === 'y') {
-        for (let i = 0; i < 4; i++) {
-            const usernewcol = question('새로운 값을 입력하세요 : ');
-            array05[i] = newresultCol;
-            const usernewcol1 = array04.splice(Number(row) - 1, 1, array05);
-            console.log(array04);
-        }
-    } else {
-        console.log(array04);
-    }
-};
-*/
+console.log(array2[resultRow]);
