@@ -5,19 +5,17 @@
 import { question } from 'readline-sync';
 
 const salesData = {
-	John: { N: 3056, S: 8463, E: 8441, W: 2694 },
-	Tom: { N: 4832, S: 6786, E: 4737, W: 3612 },
-	Anne: { N: 5239, S: 4802, E: 5802, W: 1859 },
-	Fiona: { N: 3904, S: 3645, E: 8821, W: 2451 },
-  };
-  console.log(salesData);
-  
-  const userName = question('이름을 입력하세요. : ');
-  const userLocation = question('지역을 입력하세요 (N/S/E/W) : ');
-  
-  console.log(salesData[userName][userLocation]);
-  
-  const userSales = Number(question('새로운 매출수치를 입력해주세요.'));
-  salesData[userName][userLocation] = userSales;
-  
-  console.log(salesData[userName]);
+  John: { N: 3056, S: 8463, E: 8441, W: 2694 },
+  Tom: { N: 4832, S: 6786, E: 4737, W: 3612 },
+  Anne: { N: 5239, S: 4802, E: 5802, W: 1859 },
+  Fiona: { N: 3904, S: 3645, E: 8821, W: 2451 },
+};
+console.log(salesData);
+
+const userName = question('이름을 입력하세요. : ');
+const userLocation = question('지역을 입력하세요 (N/S/E/W) : ');
+console.log(salesData[userName][userLocation]);
+
+const userSales = Number(question('새로운 매출수치를 입력해주세요.'));
+salesData[userName][userLocation] = userSales;
+console.log(salesData[userName]);
