@@ -6,7 +6,7 @@ import { question } from "readline-sync";
 const num1 = question('첫 번째 숫자를 입력 하세요.');
 const num2 = question('두 번째 숫자를 입력 하세요.');
 if (num1 > num2) { // 괄호안의 조건
-    console.log(num2); // 괄호안의 조건이 참일때 할 일
+  console.log(num2); // 괄호안의 조건이 참일때 할 일
 } else {
-    console.log(num1, num2); // 괄호안의 조건이 거짓일때 할 일
+  console.log(num1, num2); // 괄호안의 조건이 거짓일때 할 일
 }
