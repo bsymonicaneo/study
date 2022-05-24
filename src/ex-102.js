@@ -7,6 +7,7 @@ const peopleData = {};
 let userName = '';
 let userAge = 0;
 let userSize = 0;
+
 for (let i = 1; i <= 4; i++) {
   userName = question('이름을 입력하세요 ' + i + '번 : ');
   userAge = question('나이를 입력하세요 : ');
@@ -15,6 +16,7 @@ for (let i = 1; i <= 4; i++) {
 }
 
 console.log(peopleData);
+
 userName = question('위 이름중 한명의 이름을 입력하세요 : ');
 console.log(
   `${userName}의 나이는 ${peopleData[userName].age} 신발사이즈는 ${peopleData[userName].size} 입니다.`

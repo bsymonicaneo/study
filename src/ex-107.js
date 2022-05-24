@@ -1,13 +1,5 @@
-import { writeFile } from 'node:fs';
+/* ‘Names.txt’ 파일을 열고 읽어서 데이터를 표시하라. */
 
-const content = ' 1\n 2\n 3\n 4\n 5';
-
-writeFile('Names.txt', content, err =>{
-    if(err){
-        console.log(err);
-        return;
-    }
-});
 import { readFile } from 'node:fs';
 
 readFile('Names.txt', 'utf8', (err, data) =>{

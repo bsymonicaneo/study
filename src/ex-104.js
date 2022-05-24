@@ -7,6 +7,7 @@ const peopleData = {};
 let userName = '';
 let userAge = 0;
 let userSize = 0;
+
 for (let i = 1; i <= 4; i++) {
   userName = question('이름을 입력하세요 ' + i + '번 : ');
   userAge = question('나이를 입력하세요 : ');
