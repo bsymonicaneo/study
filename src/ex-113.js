@@ -15,7 +15,7 @@ while (count > 0) {
 
   file.appendFileSync(
     'Books.csv',
-    bookList.length - 2 + ',' + bookData + '\n',
+    bookList.length - 1 + ',' + bookData + '\n',
     'utf8'
   );
   count--;
@@ -27,9 +27,7 @@ console.log('\n');
 console.log(result);
 const author = question('검색할 저자의 이름은? ');
 
-for (let i = 0; i < resultList.length - 2; i++) {
-  //console.log(resultList[i].split(',')[2]);
-
+for (let i = 0; i < resultList.length - 1; i++) {
   const resultAuthor = resultList[i].split(',')[2].trim();
   if (resultAuthor === author) {
     console.log(resultList[i]);
