@@ -3,9 +3,10 @@
 import { readFile } from 'node:fs';
 
 readFile('Names.txt', 'utf8', (err, data) =>{
-    if(err){
-        console.log(err);
-        return;
-    }
-    console.log(data);
+  if (err) {
+    console.log(err);
+    return;
+  }
+
+  console.log(data);
 });
