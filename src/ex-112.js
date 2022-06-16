@@ -4,22 +4,6 @@
 import file from 'node:fs';
 import { question } from 'readline-sync';
 
-// let fd;
-// file.readFile('Books.csv', 'utf8', (error, data) => {
-//   console.log(data);
-//   const bookList = data.split('\n');
-//   //console.log(bookList);
-//   //console.log(bookList.length);
-//   const bookData = question(
-//     '새로운 책 데이터를 입력하세요 : (title, author, publicationdate) '
-//   );
-//   fd = file.openSync('Books.csv', 'a');
-//   file.appendFileSync(fd, bookList.length - 2 + ',' + bookData + '\n', 'utf8');
-
-//   const result = file.readFileSync('Books.csv', 'utf8');
-//   console.log(result);
-// });
-
 const bookData = file.readFileSync('Books.csv', 'utf8');
 
 const bookList = bookData.split('\n');
@@ -39,3 +23,19 @@ file.appendFileSync(
 
 const result = file.readFileSync('Books.csv', 'utf8');
 console.log(result);
+
+// let fd;
+// file.readFile('Books.csv', 'utf8', (error, data) => {
+//   console.log(data);
+//   const bookList = data.split('\n');
+//   //console.log(bookList);
+//   //console.log(bookList.length);
+//   const bookData = question(
+//     '새로운 책 데이터를 입력하세요 : (title, author, publicationdate) '
+//   );
+//   fd = file.openSync('Books.csv', 'a');
+//   file.appendFileSync(fd, bookList.length - 2 + ',' + bookData + '\n', 'utf8');
+
+//   const result = file.readFileSync('Books.csv', 'utf8');
+//   console.log(result);
+// });

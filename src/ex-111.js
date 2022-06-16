@@ -48,14 +48,3 @@ const data = [
 csvWriter
   .writeRecords(data)
   .then(() => console.log('The CSV file was written successfully'));
-
-/*
-Const data = [
-  [' ', 'Title', 'Author', 'Publication Date'],
-  ['0', 'To Kill A Mockingbird', 'Harper Lee', '1960'],
-  ['1', 'A Brief History of Time', 'Stephen Hawking', '1988'],
-  ['2', 'The Great Gatsby', 'F. Scott Fitzgerald', '1922'],
-  ['3', 'The Man Who Mistook His Wife for a Hat', 'Oliver Sacks', '1985'],
-  ['4', 'Pride and Prejudice', 'Jane Austen', '1813'],
-];
-*/
